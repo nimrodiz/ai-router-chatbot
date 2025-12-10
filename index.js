@@ -31,7 +31,10 @@ bot.on(['text', 'voice'], async (ctx) => {
 });
 
 app.use(express.json());
-app.use(webhookPath, bot.webhookCallback(webhookPath));
+
+// Mount Telegraf webhook middleware without stripping the path,
+// otherwise Telegraf cannot match /telegram/webhook and Express returns 404.
+app.use(bot.webhookCallback(webhookPath));
 
 app.get('/', (_req, res) => {
   res.send('Router bot is running.');
