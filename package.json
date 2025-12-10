@@ -1,0 +1,21 @@
+{
+  "name": "router-bot-gateway",
+  "version": "0.1.0",
+  "description": "Minimal Telegram router bot gateway for future STT/AI routing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "gateway"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.19.2",
+    "telegraf": "^4.16.3"
+  }
+}
