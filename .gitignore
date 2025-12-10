@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+.venv/
+venv/
+ENV/
+
+# Build outputs
+build/
+dist/
+.target/
+.tmp/
+coverage/
+.nyc_output/
+
+# Environment and secrets
+.env
+.env.*
+*.local
+*.secret
+*.key
+
+# Logs and reports
+*.log
+*.tgz
+*.gz
+*.zip
+coverage-final.json
+
+# Editors and OS artifacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
